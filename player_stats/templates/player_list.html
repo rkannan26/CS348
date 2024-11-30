@@ -1,0 +1,18 @@
+<!-- player_list.html -->
+<h2>Player List</h2>
+<ul>
+{% for player in players %}
+    <li>
+        {{ player.name }} - {{ player.team.name }} - {{ player.position }}
+        <a href="{% url 'edit_player' player.id %}">Edit</a>
+        <a href="{% url 'delete_player' player.id %}">Delete</a>
+        <a href="{% url 'add_game_stats' player.id %}">Add Stats</a>
+    </li>
+{% endfor %}
+</ul>
+<a href="{% url 'add_player' %}">Add New Player</a>
+
+<!-- Add the Generate Report button -->
+<form action="{% url 'report_view' %}" method="get">
+    <button type="submit">Generate Report</button>
+</form>

@@ -1,0 +1,7 @@
+<!-- add_game_stats.html -->
+<h2>Add Game Stats for {{ player.name }}</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit">Save Stats</button>
+</form>

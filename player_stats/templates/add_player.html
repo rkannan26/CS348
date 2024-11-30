@@ -1,0 +1,23 @@
+<h2>Add New Player</h2>
+<form method="post">
+    {% csrf_token %}
+    {{ form.name.label_tag }} {{ form.name }}
+    {{ form.position.label_tag }} {{ form.position }}
+    {{ form.age.label_tag }} {{ form.age }}
+
+    <h3>Team Information</h3>
+    <p>Select an existing team or add a new one:</p>
+    {{ form.team.label_tag }} {{ form.team }}
+    <p>Or add a new team:</p>
+    {{ form.new_team_name.label_tag }} {{ form.new_team_name }}
+    {{ form.new_team_city.label_tag }} {{ form.new_team_city }}
+    {{ form.new_team_arena.label_tag }} {{ form.new_team_arena }}
+
+    {% if form.errors %}
+    <div class="error">
+        {{ form.errors }}
+    </div>
+    {% endif %}
+
+    <button type="submit">Add Player</button>
+</form>

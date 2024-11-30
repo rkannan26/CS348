@@ -1,0 +1,47 @@
+[
+    {
+        "model": "player_stats.team",
+        "pk": 1,
+        "fields": {
+            "name": "Chicago Dragons",
+            "city": "Chicago",
+            "arena": "Dragon Arena"
+        }
+    },
+    {
+        "model": "player_stats.team",
+        "pk": 2,
+        "fields": {
+            "name": "New York Guardians",
+            "city": "New York",
+            "arena": "Guardian Coliseum"
+        }
+    },
+    {
+        "model": "player_stats.team",
+        "pk": 3,
+        "fields": {
+            "name": "Los Angeles Falcons",
+            "city": "Los Angeles",
+            "arena": "Falcon Stadium"
+        }
+    },
+    {
+        "model": "player_stats.team",
+        "pk": 4,
+        "fields": {
+            "name": "Miami Sharks",
+            "city": "Miami",
+            "arena": "Shark Arena"
+        }
+    },
+    {
+        "model": "player_stats.team",
+        "pk": 5,
+        "fields": {
+            "name": "Boston Knights",
+            "city": "Boston",
+            "arena": "Knight Dome"
+        }
+    }
+]
